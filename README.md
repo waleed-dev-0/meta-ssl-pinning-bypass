@@ -24,11 +24,17 @@ This repository is a cleaned record of the research. It is **not** a ready-to-ru
 ### 1. Before — connection could not be inspected cleanly
 The baseline capture shows repeated connections ending before useful application-layer traffic was available.
 
+![Before](screenshots/before.png)
+
 ### 2. After — GraphQL request visible
 After working through the TLS / networking path in the test environment, the GraphQL request could be inspected at the application layer. Sensitive values in the screenshot were removed before publication.
 
+![After](screenshots/after.png)
+
 ### 3. Decoded response
 The response was successfully received, decompressed and displayed as application data rather than just an opaque TLS connection.
+
+![Response](screenshots/response.png)
 
 ## 🧠 What I learned
 
